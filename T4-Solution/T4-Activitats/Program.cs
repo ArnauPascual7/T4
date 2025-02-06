@@ -4,11 +4,11 @@
     {
         public static void Main(string[] args)
         {
-            Parella<string, int> parella1 = new Parella<string, int>("Hola", 1);
-            Parella<double, bool> parella2 = new Parella<double, bool>(3.5d, true);
+            Pair<string, int> pair1 = new Pair<string, int>("Hola", 1);
+            Pair<double, bool> pair2 = new Pair<double, bool>(3.5d, true);
 
-            parella1.ShowItems();
-            parella2.ShowItems();
+            pair1.ShowItems();
+            pair2.ShowItems();
         }
     }
 }
