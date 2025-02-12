@@ -4,7 +4,10 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Func<int, int, int> multiply = (a, b) => a * b;
+            Console.WriteLine(multiply(2, 3));
+            Action<int, int> printSum = (a, b) => Console.WriteLine((a + b));
+            printSum(2, 2);
         }
     }
 }
