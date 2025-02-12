@@ -21,6 +21,7 @@
                 ages.Add(name, age);
             }
 
+            Console.WriteLine(MsgRes);
             foreach (var item in ages)
             {
                 Console.WriteLine($"{item.Key}: {item.Value}");
