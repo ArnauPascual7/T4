@@ -4,7 +4,8 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Console.WriteLine(GetDayOfWeek());
         }
+        public static DayOfWeek GetDayOfWeek() => DateTime.Now.DayOfWeek;
     }
 }
