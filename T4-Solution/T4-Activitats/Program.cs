@@ -4,7 +4,8 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine($"Edat: {Employee.GetAge(DateTime.Parse("11/2/2010"))}");
+            SalesEmployee salesEmployee = new SalesEmployee("A2", "Arnau", "Pascual", DateTime.Parse("10/2/2000"), DateTime.Parse("10/2/2020"), 0.5f);
+            Console.WriteLine(salesEmployee.ToString());
         }
     }
 }
