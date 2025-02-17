@@ -3,6 +3,7 @@ namespace T4_Activitats
 {
     public class Employee
     {
+        public static int EmployeesCount;
         public string Code { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -20,6 +21,7 @@ namespace T4_Activitats
             HireDate = hireDate;
             MonthSalary = monthSalary;
             Payments = payments;
+            EmployeesCount++;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate, float monthSalary)
         {
@@ -29,6 +31,7 @@ namespace T4_Activitats
             BirthDate = birthDate;
             HireDate = hireDate;
             MonthSalary = monthSalary;
+            EmployeesCount++;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate, int payments)
         {
@@ -38,6 +41,7 @@ namespace T4_Activitats
             BirthDate = birthDate;
             HireDate = hireDate;
             Payments = payments;
+            EmployeesCount++;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate)
         {
@@ -46,6 +50,7 @@ namespace T4_Activitats
             LastName = lastname;
             BirthDate = birthDate;
             HireDate = hireDate;
+            EmployeesCount++;
         }
 
         public string GetFullName() => $"{FirstName} {LastName}";
