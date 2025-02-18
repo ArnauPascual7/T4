@@ -3,6 +3,7 @@ namespace T4_Activitats
 {
     public class Employee
     {
+        public static int Employees { get; private set; }
         public string Code { get; set; }
         public string FirstName { get; set; }
         public string LastName { get; set; }
@@ -12,31 +13,19 @@ namespace T4_Activitats
         public int Payments { get; set; } = 14;
 
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate, float monthSalary, int payments)
+            : this (code, firstname, lastname, birthDate, hireDate)
         {
-            Code = code;
-            FirstName = firstname;
-            LastName = lastname;
-            BirthDate = birthDate;
-            HireDate = hireDate;
             MonthSalary = monthSalary;
             Payments = payments;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate, float monthSalary)
+            : this (code, firstname, lastname, birthDate, hireDate)
         {
-            Code = code;
-            FirstName = firstname;
-            LastName = lastname;
-            BirthDate = birthDate;
-            HireDate = hireDate;
             MonthSalary = monthSalary;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate, int payments)
+            : this (code, firstname, lastname, birthDate, hireDate)
         {
-            Code = code;
-            FirstName = firstname;
-            LastName = lastname;
-            BirthDate = birthDate;
-            HireDate = hireDate;
             Payments = payments;
         }
         public Employee(string code, string firstname, string lastname, DateTime birthDate, DateTime hireDate)
@@ -46,6 +35,7 @@ namespace T4_Activitats
             LastName = lastname;
             BirthDate = birthDate;
             HireDate = hireDate;
+            Employees++;
         }
 
         public string GetFullName() => $"{FirstName} {LastName}";
