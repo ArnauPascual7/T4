@@ -35,7 +35,7 @@ namespace T4_Activitats
             LastName = lastname;
             BirthDate = birthDate;
             HireDate = hireDate;
-            Employees++;
+            Employees ++;
         }
 
         public string GetFullName() => $"{FirstName} {LastName}";
