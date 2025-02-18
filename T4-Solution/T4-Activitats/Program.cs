@@ -6,7 +6,7 @@
         {
             SalesEmployee salesEmployee = new SalesEmployee("A2", "Arnau", "Pascual", DateTime.Parse("10/2/2000"), DateTime.Parse("10/2/2020"), 0.5f);
             Console.WriteLine(salesEmployee.ToString());
-            Console.WriteLine($"Employees: {Employee.EmployeesCount}");
+            Console.WriteLine($"Employees: {Employee.EmployeeCount}");
         }
     }
 }
