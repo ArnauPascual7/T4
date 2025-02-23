@@ -4,7 +4,13 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            string[] arr = { "a", "b", "c" };
+            List<string> list = arr.ToList();
+
+            foreach (string item in list)
+            {
+                Console.WriteLine(item);
+            }
         }
     }
 }
