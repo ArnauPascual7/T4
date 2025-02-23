@@ -4,7 +4,18 @@
     {
         public static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+
+        }
+        public static List<int> RemoveHigherValues(List<int> nums, int value)
+        {
+            foreach (int num in nums)
+            {
+                if (num > value)
+                {
+                    nums.Remove(num);
+                }
+            }
+            return nums;
         }
     }
 }
